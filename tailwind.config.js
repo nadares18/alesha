@@ -17,9 +17,6 @@ module.exports = {
     },
   },
   theme: {
-    colors: {
-      ...colors,
-    },
     extend: {
       minHeight: {
         "screen-75": "75vh",

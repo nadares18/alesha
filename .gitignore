@@ -1,6 +1,7 @@
 .DS_Store
 node_modules
 /dist
+/build
 
 # local env files
 .env.local
@@ -22,3 +23,6 @@ yarn-error.log*
 
 package-lock.json
 commit.sh
+
+#temporary files
+.angular/cache

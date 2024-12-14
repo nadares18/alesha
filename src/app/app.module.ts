@@ -41,6 +41,7 @@ import { FooterSmallComponent } from "./components/footers/footer-small/footer-s
 import { HeaderStatsComponent } from "./components/headers/header-stats/header-stats.component";
 import { IndexNavbarComponent } from "./components/navbars/index-navbar/index-navbar.component";
 import { MapExampleComponent } from "./components/maps/map-example/map-example.component";
+import { MapViewComponent } from "./components/maps/map-view/map-view.component";
 import { IndexDropdownComponent } from "./components/dropdowns/index-dropdown/index-dropdown.component";
 import { TableDropdownComponent } from "./components/dropdowns/table-dropdown/table-dropdown.component";
 import { PagesDropdownComponent } from "./components/dropdowns/pages-dropdown/pages-dropdown.component";
@@ -48,6 +49,8 @@ import { NotificationDropdownComponent } from "./components/dropdowns/notificati
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { UserDropdownComponent } from "./components/dropdowns/user-dropdown/user-dropdown.component";
 
+//Additional Module
+import { GoogleMapsModule } from "@angular/google-maps";
 @NgModule({
   declarations: [
     AppComponent,
@@ -71,6 +74,7 @@ import { UserDropdownComponent } from "./components/dropdowns/user-dropdown/user
     CardTableComponent,
     HeaderStatsComponent,
     MapExampleComponent,
+    MapViewComponent,
     AuthNavbarComponent,
     AdminNavbarComponent,
     IndexNavbarComponent,
@@ -85,7 +89,7 @@ import { UserDropdownComponent } from "./components/dropdowns/user-dropdown/user
     LandingComponent,
     ProfileComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, GoogleMapsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

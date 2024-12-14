@@ -1,5 +1,5 @@
 import { Component, OnInit, AfterViewInit } from "@angular/core";
-import Chart from "chart.js";
+import Chart from "chart.js/auto";
 
 @Component({
     selector: "app-card-bar-chart",
@@ -105,6 +105,6 @@ export class CardBarChartComponent implements OnInit, AfterViewInit {
     };
     let ctx: any = document.getElementById("bar-chart");
     ctx = ctx.getContext("2d");
-    new Chart(ctx, config);
+    //new Chart(ctx, config);
   }
 }

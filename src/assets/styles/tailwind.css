@@ -581,7 +581,7 @@ select {
   background-size: 1.5em 1.5em;
   padding-right: 2.5rem;
   -webkit-print-color-adjust: exact;
-          color-adjust: exact;
+          print-color-adjust: exact;
 }
 
 [multiple] {
@@ -591,7 +591,7 @@ select {
   background-size: initial;
   padding-right: 0.75rem;
   -webkit-print-color-adjust: unset;
-          color-adjust: unset;
+          print-color-adjust: unset;
 }
 
 
@@ -603,7 +603,7 @@ select {
           appearance: none;
   padding: 0;
   -webkit-print-color-adjust: exact;
-          color-adjust: exact;
+          print-color-adjust: exact;
   display: inline-block;
   vertical-align: middle;
   background-origin: border-box;
@@ -1235,6 +1235,21 @@ select {
 .bg-purple-500 {
   --tw-bg-opacity: 1;
   background-color: rgba(168, 85, 247, var(--tw-bg-opacity));
+}
+
+.bg-purple-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(147, 51, 234, var(--tw-bg-opacity));
+}
+
+.bg-purple-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(126, 34, 206, var(--tw-bg-opacity));
+}
+
+.bg-purple-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(107, 33, 168, var(--tw-bg-opacity));
 }
 
 .bg-indigo-500 {
